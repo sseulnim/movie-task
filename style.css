@@ -1,3 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+/* header - 블록지정, font 사이즈/색상, bg색상, 가운데정렬, 상하여백 */
 .title {
-    font-size: 24px;
+    display: flex;
+    font-size: 30px;
+    color: white;
+    background-color: #231f47;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+/* form - 블록지정, font 사이즈/색상, bg색상, 가운데정렬, 상하여백 하단 border */
+form {
+    display: flex;
+    font-size: 20px;
+    color: white;
+    background-color: #464374;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background: linear-gradient(to bottom, #231f47 0%, #464374 100%);
+    /* border-bottom: 2px solid #231f47; */
+}
+/* form 영화검색 - 여백 띄우기,   */
+h4 {
+    margin-right: 10px;
+}
+/* form 검색창 - border주기, */
+input {
+    padding: 5px 10px;
+    border: 2px solid #231f47;
+    border-radius: 3px;
+}
+
+/* form 검색버튼 - 여백 띄우기, boder주기 */
+button {
+    background-color: white;
+    color: #231f47;
+    margin-left: 10px;
+    padding: 5px 10px;    
+    border: 2px solid #231f47;
+    border-radius: 3px;
+}
+/* form 검색버튼 - hover 색상변경 */
+button:hover {
+    background-color: #f46d3d;
+    color: white;
 }
