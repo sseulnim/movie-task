@@ -35,6 +35,7 @@ input {
     padding: 5px 10px;
     border: 2px solid #231f47;
     border-radius: 3px;
+    box-shadow: 0 0 5px #231f47;
 }
 
 /* form 검색버튼 - 여백 띄우기, boder주기 */
@@ -45,9 +46,40 @@ button {
     padding: 5px 10px;    
     border: 2px solid #231f47;
     border-radius: 3px;
+    box-shadow: 0 0 5px #231f47;
 }
 /* form 검색버튼 - hover 색상변경 */
 button:hover {
     background-color: #f46d3d;
     color: white;
+}
+/* card 검색버튼 - 한줄 3개 배치, 테두리, 사이즈 조절, shadow */
+body {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #6c69b6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.card {
+    text-align: center;
+    background-color: #f46d3d;
+    color: white;
+    width: calc(20% - 20px);
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #464374;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #231f47;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
