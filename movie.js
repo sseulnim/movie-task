@@ -57,7 +57,7 @@ const updateMovieList = (movies) => {
       <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}" />
       <h3>${movie.title}</h3>
       <p>${movie.overview}</p>
-      <p>평점: ${movie.vote_average}</p>
+      <p>Rating: ${movie.vote_average}</p>
     `;
 
     // 카드를 클릭했을 때 영화 ID를 alert로 표시
