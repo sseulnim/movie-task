@@ -76,6 +76,7 @@ body {
     border: 2px solid #464374;
     border-radius: 10px;
     box-shadow: 0 0 5px #231f47;
+    cursor: pointer;
 }
 
 .card img {

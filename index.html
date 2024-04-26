@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1 class="title">내배캠 최고 평점 영화 콜렉션</h1>
     </header>
     <form>
-        <h4>영화 검색 :</h4> 
+        <h4>영화 검색 :</h4>
         <input id="searchInput" />
-        <button id="searchButton">검색</button>
+        <button type="button" id="searchButton">검색</button>
     </form>
-    <section class="container">
-        <!-- 영화 카드가 동적으로 추가되는 공간  -->
+    <section class="container" id="movieContainer">
     </section>
-    <script src="./movie.js"></script>    
+    <script src="movie.js"></script>
 </body>
+
 </html>
+
