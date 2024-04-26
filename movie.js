@@ -16,7 +16,7 @@ const showMovieId = (movieId) => {
 };
 
 // 영화 정보를 가져와서 화면에 표시하는 함수
-const fetchAndDisplayMovies = () => {
+const fetchMovies = () => {
     // API 요청 보내기
     fetch(apiUrl, options)
         .then(response => response.json())
@@ -28,13 +28,13 @@ const fetchAndDisplayMovies = () => {
             const inputText = document.querySelector('#searchInput').value.toLowerCase();
 
             // 필터링된 영화들을 화면에 표시
-            updateMovieList(movies, inputText);
+            MovieList(movies, inputText);
         })
         .catch(err => console.error(err));
 };
 
 // 영화 정보 카드 리스트 업데이트하는 함수
-const updateMovieList = (movies, inputText) => {
+const MovieList = (movies, inputText) => {
     // 영화 정보 카드 리스트 요소
     const container = document.querySelector('#movieContainer');
     container.innerHTML = ''; // 기존 내용 초기화
@@ -70,8 +70,8 @@ const updateMovieList = (movies, inputText) => {
 };
 
 // 검색 버튼 클릭 이벤트 리스너 추가
-document.querySelector('#searchButton').addEventListener('click', fetchAndDisplayMovies);
+document.querySelector('#searchButton').addEventListener('click', fetchMovies);
 
 // 페이지 로드 시 초기 영화 정보 가져오기
-fetchAndDisplayMovies();
+fetchMovies();
 
