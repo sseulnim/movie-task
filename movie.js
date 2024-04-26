@@ -74,3 +74,4 @@ document.querySelector('#searchButton').addEventListener('click', fetchAndDispla
 
 // 페이지 로드 시 초기 영화 정보 가져오기
 fetchAndDisplayMovies();
+
